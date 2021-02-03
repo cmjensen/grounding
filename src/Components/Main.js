@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Forms from './Forms'
-import List from './List'
 
 class Main extends Component {
     constructor() {
@@ -12,22 +11,11 @@ class Main extends Component {
             smell: [],
             hear: [],
             touch: [],
-            editing: false
         }
     }
 
     componentDidMount() {
         this.getAnchor()
-    }
-
-    toggleEditing = () => {
-        if(this.state.editing === false) {
-            this.setState({
-                editing: true
-            })
-        } else this.setState({
-                editing: false
-        })
     }
 
     getAnchor = sense => {
@@ -185,15 +173,6 @@ class Main extends Component {
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
-           
-            <div>
-                 <List touch={this.state.touch}
-                 sight={this.state.sight}
-                 smell={this.state.smell}
-                 taste={this.state.taste}
-                 hear={this.state.hear}
-                 editing={this.state.editing}/>
-            </div>
             </div>
     }
 }

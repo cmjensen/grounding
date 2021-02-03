@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import List from './List'
 
 class Forms extends Component {
     constructor(props) {
@@ -9,7 +8,8 @@ class Forms extends Component {
             sense2: '',
             sense3: '',
             sense4: '',
-            sense5: ''
+            sense5: '',
+            hasSubmitted: false
         }
     }
 
@@ -23,12 +23,17 @@ class Forms extends Component {
         console.log(this.props.sense)
         e.preventDefault()
         this.props.addAnchor(this.props.sense, this.state)
+    }
+
+    handleDelete = () => {
+        this.props.deleteAnchor(this.props.sense)
         this.setState({
             sense1: '',
             sense2: '',
             sense3: '',
             sense4: '',
-            sense5: ''
+            sense5: '',
+            hasSubmitted: false
         })
     }
 
@@ -70,15 +75,11 @@ class Forms extends Component {
             <button 
                 type='submit'
                 className='add-button'
-                onClick={() => this.props.addSenses( this.props.sense, [ this.state.sense1, this.state.sense2, this.state.sense3, this.state.sense4, this.state.sense5 ] )}>Add</button>
-            <button 
-                type='submit'
-                className='edit'
-                onClick={() => this.props.toggleEditing()}>Edit</button>
+                onClick={() => this.props.addSenses( this.props.sense, [ this.state.sense1, this.state.sense2, this.state.sense3, this.state.sense4, this.state.sense5 ] )}>Submit</button>
             <button 
                 type='submit'
                 className='delete'
-                onClick={() => this.props.deleteAnchor(this.props.sense)}>Delete</button>
+                onClick={() => this.handleDelete()}>Delete</button>
         </form>
         
     </div>
