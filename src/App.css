@@ -1,4 +1,4 @@
-/* .header {
+.header {
     width: 100vw;
     height: 80px;
     font-family: Helvetica, sans-serif;
@@ -10,114 +10,42 @@
 
 .main {
     width: 100vw;
-    height: 370px;
-    font-family: Helvetica, sans-serif;
-    color: #555B6E;
+    height: 100vh;
     background-color: #BEE3DB;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
-.see-form {
-    width: 136px;
-    height: 300px;
+.h2 {
+    color: #555B6E;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.form {
+    width: 200px;
+    height: 250px;
     background-color: #89B0AE;
+    border-radius: 20px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-    align-content: stretch;
-    float: left;
-    margin: 40px 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.hear-form {
-    width: 136px;
-    height: 300px;
-    background-color: #89B0AE;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    float: left;
-    margin: 40px 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.touch-form {
-    width: 136px;
-    height: 300px;
-    background-color: #89B0AE;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    float: left;
-    margin: 40px 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.smell-form {
-    width: 136px;
-    height: 300px;
-    background-color: #89B0AE;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    float: left;
-    margin: 40px 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.taste-form {
-    width: 136px;
-    height: 300px;
-    background-color: #89B0AE;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    float: left;
-    margin: 40px 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
+	align-content: center;
 }
 
 .inputs {
-    width: 90px;
-    height: 23px;
-    background-color: #FAF9F9;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    margin: 0px;
-    border-radius: 25px;
     border: none;
-
+    border-radius: 25px;
+    margin: 10px;
 }
 
-.add-button {
+.button {
     width: 50px;
     height: 30px;
     background-color: #FAF9F9;
@@ -125,83 +53,7 @@
     padding: 5px;
     text-align: center;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555B6E;
+    margin: 5px;
 }
-
-.list {
-    width: 100vw;
-    height: 150px;
-    background-color: #FAF9F9;
-}
-
-.see-orange-ball {
-    width: 110px;
-    height: 110px;
-    background-color: #FFD6BA;
-    border-radius: 50%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.hear-orange-ball {
-    width: 110px;
-    height: 110px;
-    background-color: #FFD6BA;
-    border-radius: 50%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.touch-orange-ball {
-    width: 110px;
-    height: 110px;
-    background-color: #FFD6BA;
-    border-radius: 50%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.smell-orange-ball {
-    width: 110px;
-    height: 110px;
-    background-color: #FFD6BA;
-    border-radius: 50%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.taste-orange-ball {
-    width: 110px;
-    height: 110px;
-    background-color: #FFD6BA;
-    border-radius: 50%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.edit {
-    
-}
-
-.delete {
-
-} */

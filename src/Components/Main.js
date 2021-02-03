@@ -126,49 +126,40 @@ class Main extends Component {
         }).catch( err => console.log(err))
     }
 
-    addSenses = ( senseName, newArr ) => {
-        this.setState({
-            [senseName]: newArr
-        })
-    }
-
     render() {
-        return <div>
-            <h2>5 Things You See</h2>
+        return <div className='main'>
+            <div>
+            <h2 className='h2'>5 Things You See</h2>
             <Forms sense='sight'
-                    addSenses={this.addSenses}
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
+            </div>
 
-            <h2>5 Things You Taste</h2>
+            <h2 className='h2'>5 Things You Taste</h2>
             <Forms sense='taste'
-                    addSenses={this.addSenses}
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
 
-            <h2>5 Things You Smell</h2>
+            <h2 className='h2'>5 Things You Smell</h2>
             <Forms sense='smell'
-                    addSenses={this.addSenses}
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
 
-            <h2>5 Things You Hear</h2>
+            <h2 className='h2'>5 Things You Hear</h2>
             <Forms sense='hear'
-                    addSenses={this.addSenses}
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
 
-            <h2>5 Things You Feel</h2>
+            <h2 className='h2'>5 Things You Feel</h2>
             <Forms sense='touch'
-                    addSenses={this.addSenses}
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}

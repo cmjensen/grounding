@@ -20,7 +20,6 @@ class Forms extends Component {
     }
 
     handleSubmit = e => {
-        console.log(this.props.sense)
         e.preventDefault()
         this.props.addAnchor(this.props.sense, this.state)
     }
@@ -36,11 +35,23 @@ class Forms extends Component {
             hasSubmitted: false
         })
     }
+//if they have submitted, update. if they haven't, add it and mark that they updated it
+    handleAdd = () => {
+        if(this.state.hasSubmitted) {
+            this.props.updateAnchor(this.props.sense)
+        } else { 
+            this.setState({
+                hasSubmitted: true
+            })
+            this.props.addAnchor(this.props.sense, this.state)
+        }
+    }
 
     render() {
-        return <div className='main'>
+        return <div className='see-form'>
             
-        <form onSubmit={e => this.handleSubmit(e)}>
+        <form onSubmit={e => this.handleSubmit(e)}
+            className='form'>
             <input 
                 className='inputs'
                 name='sense1'
@@ -74,11 +85,11 @@ class Forms extends Component {
                 />
             <button 
                 type='submit'
-                className='add-button'
-                onClick={() => this.props.addSenses( this.props.sense, [ this.state.sense1, this.state.sense2, this.state.sense3, this.state.sense4, this.state.sense5 ] )}>Submit</button>
+                className='button'
+                onClick={() => this.handleAdd()}>Submit</button>
             <button 
                 type='submit'
-                className='delete'
+                className='button'
                 onClick={() => this.handleDelete()}>Delete</button>
         </form>
         
