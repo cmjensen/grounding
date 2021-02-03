@@ -5,10 +5,10 @@ const app = express()
 app.use(express.json())
 
 //Endpoints
-app.get('/api/senses', ctrl.getSenses)
-app.post('/api/senses', ctrl.addSenses)
-app.put('/api/senses/:id', ctrl.completeSenses)
-app.delete('/senses/:id', ctrl.deleteSenses)
+app.get(`/api/getAnchor/:sense`, ctrl.getAnchor)
+app.post(`/api/addAnchor/:sense`, ctrl.addAnchor)
+app.put(`/api/updateAnchor/:sense`, ctrl.updateAnchor)
+app.delete(`/api/deleteAnchor/:sense`, ctrl.deleteAnchor)
 
 const port = 3001
 app.listen(port, () => console.log(`Server is listening on port ${port}`))

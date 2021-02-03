@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+/* .header {
+    width: 100vw;
+    height: 80px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: #555B6E;
+    background-color: #FAF9F9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    width: 100vw;
+    height: 370px;
+    font-family: Helvetica, sans-serif;
+    color: #555B6E;
+    background-color: #BEE3DB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.see-form {
+    width: 136px;
+    height: 300px;
+    background-color: #89B0AE;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    float: left;
+    margin: 40px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hear-form {
+    width: 136px;
+    height: 300px;
+    background-color: #89B0AE;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    float: left;
+    margin: 40px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.touch-form {
+    width: 136px;
+    height: 300px;
+    background-color: #89B0AE;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    float: left;
+    margin: 40px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smell-form {
+    width: 136px;
+    height: 300px;
+    background-color: #89B0AE;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    float: left;
+    margin: 40px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
 }
+
+.taste-form {
+    width: 136px;
+    height: 300px;
+    background-color: #89B0AE;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    float: left;
+    margin: 40px 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.inputs {
+    width: 90px;
+    height: 23px;
+    background-color: #FAF9F9;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: stretch;
+    margin: 0px;
+    border-radius: 25px;
+    border: none;
+
+}
+
+.add-button {
+    width: 50px;
+    height: 30px;
+    background-color: #FAF9F9;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+
+.list {
+    width: 100vw;
+    height: 150px;
+    background-color: #FAF9F9;
+}
+
+.see-orange-ball {
+    width: 110px;
+    height: 110px;
+    background-color: #FFD6BA;
+    border-radius: 50%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.hear-orange-ball {
+    width: 110px;
+    height: 110px;
+    background-color: #FFD6BA;
+    border-radius: 50%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.touch-orange-ball {
+    width: 110px;
+    height: 110px;
+    background-color: #FFD6BA;
+    border-radius: 50%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.smell-orange-ball {
+    width: 110px;
+    height: 110px;
+    background-color: #FFD6BA;
+    border-radius: 50%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.taste-orange-ball {
+    width: 110px;
+    height: 110px;
+    background-color: #FFD6BA;
+    border-radius: 50%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.edit {
+    
+}
+
+.delete {
+
+} */
