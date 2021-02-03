@@ -45,13 +45,14 @@ class Forms extends Component {
             })
             this.props.addAnchor(this.props.sense, this.state)
         }
+        
     }
 
     render() {
-        return <div className='see-form'>
+        return <div>
             
         <form onSubmit={e => this.handleSubmit(e)}
-            className='form'>
+                className='input-field'>
             <input 
                 className='inputs'
                 name='sense1'
@@ -83,6 +84,7 @@ class Forms extends Component {
                 value={this.state.sense5}
                 onChange={e => this.handleChange(e)}
                 />
+            <div className='button-menu'>
             <button 
                 type='submit'
                 className='button'
@@ -91,6 +93,7 @@ class Forms extends Component {
                 type='submit'
                 className='button'
                 onClick={() => this.handleDelete()}>Delete</button>
+            </div>        
         </form>
         
     </div>

@@ -128,7 +128,7 @@ class Main extends Component {
 
     render() {
         return <div className='main'>
-            <div>
+            <div className='form'>
             <h2 className='h2'>5 Things You See</h2>
             <Forms sense='sight'
                     addAnchor={this.addAnchor}
@@ -137,27 +137,32 @@ class Main extends Component {
                     toggleEditing={this.toggleEditing}/>
             </div>
 
+            <div className='form'>
             <h2 className='h2'>5 Things You Taste</h2>
             <Forms sense='taste'
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
+            </div>
 
+            <div className='form'>
             <h2 className='h2'>5 Things You Smell</h2>
             <Forms sense='smell'
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
-
+            </div>
+            <div className='form'>
             <h2 className='h2'>5 Things You Hear</h2>
             <Forms sense='hear'
                     addAnchor={this.addAnchor}
                     updateAnchor={this.updateAnchor}
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
-
+            </div>
+            <div className='form'>
             <h2 className='h2'>5 Things You Feel</h2>
             <Forms sense='touch'
                     addAnchor={this.addAnchor}
@@ -165,6 +170,7 @@ class Main extends Component {
                     deleteAnchor={this.deleteAnchor}
                     toggleEditing={this.toggleEditing}/>
             </div>
+        </div>
     }
 }
 
